@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.App{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+h2{
+    color: blue;
+    font-size:2rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+input{
+    width: 200px;
+    height:25px;
+    margin: 10px 0px 10px 0px ;
+    border-radius:10px;
+    padding-left:10px;
+}
+.forget-pass{
+    display: flex;
+    align-self: flex-end;
+    margin: 10px 0px ;
+}
+button{
+width: 70px;
+height:25px;
+border-radius: 10px;
+background-color: blue;
+color: white;
+margin: 10px 0px;
+}
+
+@media only screen and (min-width:800px){
+   h2{
+    font-size: 2.5rem;
+   }
+   input{
+    width: 250px;
+    height:30px;
+    margin: 15px 0px 15px 0px ;
+}
+.forget-pass{
+    display: flex;
+    align-self: flex-end;
+    margin: 15px 0px ;
+}
+button{
+    width: 90px;
+    height:30px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    }
+}
+@media only screen and (min-width:1200px){
+    h2{
+     font-size: 2.8rem;
+    }
+    input{
+     width: 280px;
+     height:35px;
+     margin: 18px 0px 18px 0px ;
+ }
+ .forget-pass{
+     display: flex;
+     align-self: flex-end;
+     margin: 18px 0px ;
+ }
+ button{
+     width: 110px;
+     height:35px;
+     margin: 18px 0px;
+     }
+ }
