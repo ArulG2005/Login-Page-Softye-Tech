@@ -1,5 +1,19 @@
 const settingModel = require("./invoiceSettingModel")
 
+exports.getInvoiceSetting=async(req,res)=>{
+    const setting=await settingModel.find();
+    if(!setting){
+        res.status(404).json({
+            message:false,
+            message:"Not found"
+        })
+    }
+
+    res.status(200).json({
+        success:true,
+        setting
+    })
+}
 exports.setInvoiceSetting=async(req,res)=>{
     try{
        const setting= await settingModel.create(req.body);
